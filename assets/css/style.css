@@ -73,6 +73,10 @@
     color: var(--color-orange);
 }
 
+.mt-5 {
+    margin-top: -5px !important;
+}
+
 .card-sec {
     max-width: 1320px;
     padding: 24px;
@@ -117,16 +121,19 @@
     line-height: 32.4px;
     color: var(--color-white);
     position: relative;
-  
-
     
+
+
+
 }
-.menulist:hover::after{
+
+.menulist:hover::after {
     left: -50%;
     width: 100%;
     bottom: -3px;
 }
-.menulist::after{
+
+.menulist::after {
     content: "";
     position: absolute;
     width: 0%;
@@ -135,7 +142,7 @@
     left: 50%;
     background-color: var(--color-orange);
     transform: translate(50%);
-        transition: all linear 0.3s;
+    transition: all linear 0.3s;
 
 }
 
@@ -155,6 +162,7 @@
     height: 46px;
     border-radius: 23.5px;
     border: none;
+    
 
 }
 
@@ -914,3 +922,82 @@ ul.timeline-list li:before {
     bottom: 0%;
     right: 0%;
 }
+@media (max-width: 991.9px) {
+    .mobile_view {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 400ms linear;
+        /* backdrop-filter: blur(90px); */
+        background-color:var(--color-zblack);
+        z-index: 4;
+    }
+
+    .menu_1 {
+        z-index: 50;
+    }
+
+    .overflow_hidden {
+        overflow: hidden;
+    }
+
+    .menu_1 span:nth-child(1) {
+        height: 4px;
+        width: 35px;
+        background-color: var(--color-orange);
+        display: block;
+        border-radius: 30px;
+    }
+
+    .menu_1 span:nth-child(2) {
+        height: 4px;
+        width: 35px;
+        background-color: var(--color-orange);
+        display: block;
+        border-radius: 30px;
+    }
+
+    .menu_1 span:nth-child(3) {
+        height: 4px;
+        width: 35px;
+        background-color: var(--color-orange);
+        display: block;
+        border-radius: 30px;
+    }
+
+    .menu_1 span {
+        transition: all 400ms linear;
+    }
+
+    .cross span:nth-child(1) {
+        transform: rotate(42deg) translateY(16px);
+        transition: 300ms linear;
+        background-color: var(--color-white);
+    }
+
+    .cross span:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 10ms linear;
+    }
+
+    .cross span:nth-child(3) {
+        transform: rotate(-43deg) translateY(-15px);
+        transition: 300ms linear;
+        background-color: var(--color-white);
+    }
+
+    .right {
+        left: 0;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+}
+ 
