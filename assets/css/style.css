@@ -85,6 +85,7 @@
     top: -237px;
     left: 50%;
     transform: translateX(-50%);
+    border: 2px solid #454443;
 }
 
 
@@ -115,6 +116,27 @@
     font-weight: 400;
     line-height: 32.4px;
     color: var(--color-white);
+    position: relative;
+  
+
+    
+}
+.menulist:hover::after{
+    left: -50%;
+    width: 100%;
+    bottom: -3px;
+}
+.menulist::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -10px;
+    left: 50%;
+    background-color: var(--color-orange);
+    transform: translate(50%);
+        transition: all linear 0.3s;
+
 }
 
 .menulist:hover {
@@ -506,9 +528,10 @@
 }
 
 .img-overflow {
-    width: 50%;
+    width: 43%;
     position: absolute;
     right: 0%;
+    height: 55%;
 }
 
 .cras-text {
@@ -753,8 +776,6 @@ ul.timeline-list li:before {
     border: 1px solid #0000001A;
     overflow: hidden;
     position: relative;
-    margin-top: 24px;
-    margin-bottom: 24px;
     border-radius: 5px;
 
 }
@@ -810,7 +831,7 @@ ul.timeline-list li:before {
 
 .Accordian-tex {
     padding: 20px;
-    top: -180%;
+    top: -200%;
     position: absolute;
 }
 
