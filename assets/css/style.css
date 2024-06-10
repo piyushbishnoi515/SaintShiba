@@ -27,7 +27,7 @@
     --fs-7xl: 44px;
     --fs-8xl: 31px;
     --fs-9x1: 48px;
-    --fs-12x1: 96px;
+    --fs-12x1: 50px;
 
     /* / color */
     --color-orange: #F06500;
@@ -463,10 +463,15 @@
 
 }
 
+.table-heading {
+    overflow-x: scroll;
+}
+
 .bg-gray {
     background-color: #191818;
 }
-.black{
+
+.black {
     background-color: var(--color-00ACFF);
     padding: 20px;
 }
@@ -559,7 +564,7 @@
     font-size: var(--fs-xl);
     font-weight: 400;
     line-height: 32.4px;
- color: var(--color-7B7B7B);
+    color: var(--color-7B7B7B);
 }
 
 .one {
@@ -934,38 +939,44 @@ ul.timeline-list li:before {
     bottom: 0%;
     right: 0%;
 }
+
 @media (max-width:576px) {
     .amet-text {
-            font-family: "Poppins", sans-serif;
-            font-size: var(--fs-xl);
-            font-weight: 400;
-            line-height: 19.4px !important;
-            color: var(--color-7B7B7B);
+        font-family: "Poppins", sans-serif;
+        font-size: var(--fs-xl);
+        font-weight: 400;
+        line-height: 19.4px !important;
+        color: var(--color-7B7B7B);
+    }
+        .assumsan {
+            line-height: 57.52px;
         }
-    
+
 }
+
 @media (min-width:768px) {
     :root {
-            /* font-size / */
-            --fs-9: 9px;
-            --fs-10: 10px;
-            --fs-11: 11px;
-            --fs-sm: 12px;
-            --fs-base: 14px;
-            --fs-15: 15px;
-            --fs-lg: 16px;
-            --fs-xl: 18px;
-            --fs-2xl: 20px;
-            --fs-3xl: 22px;
-            --fs-4xl: 25px;
-            --fs-5xl: 36px;
-            --fs-6xl: 38px;
-            --fs-7xl: 44px;
-            --fs-8xl: 31px;
-            --fs-9x1: 48px;
-            --fs-12x1: 96px;
+        /* font-size / */
+        --fs-9: 9px;
+        --fs-10: 10px;
+        --fs-11: 11px;
+        --fs-sm: 12px;
+        --fs-base: 14px;
+        --fs-15: 15px;
+        --fs-lg: 16px;
+        --fs-xl: 18px;
+        --fs-2xl: 20px;
+        --fs-3xl: 22px;
+        --fs-4xl: 25px;
+        --fs-5xl: 36px;
+        --fs-6xl: 38px;
+        --fs-7xl: 44px;
+        --fs-8xl: 31px;
+        --fs-9x1: 48px;
+        --fs-12x1: 96px;
     }
-        
+    
+
 }
 
 
@@ -1008,7 +1019,13 @@ ul.timeline-list li:before {
         height: 55%;
     }
 
-}
+    ul.timeline-list:before {
+        left: 50%;
+    }
+            ul.timeline-list li .timeline_content {
+                text-align: right;
+            }
+        }
 
 
 @media (max-width: 991.9px) {
